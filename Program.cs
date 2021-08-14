@@ -46,12 +46,12 @@ namespace reverseString
         {
             var chars = str.ToCharArray();
             var len = str.Length;
-            string s = string.Empty;
+            //string s = string.Empty;
+            char[] s=new char[len];
             for(int j=len-1; j>=0; j--){
-                s+=chars[j];
+                s[j]=chars[j];
             }
-
-            return s;
+            return new string(s);
         }
         static string ReverseStringFast(string str)
         {
